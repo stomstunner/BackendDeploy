@@ -1,0 +1,18 @@
+{
+  "name": "deploybackend",
+  "version": "1.0.0",
+  "description": "a basic app for deploy the first backend project",
+  "keywords": [
+    "backend",
+    "deploy",
+    "stomstunner",
+    "first"
+  ],
+  "license": "ISC",
+  "author": "ujjwal singh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
