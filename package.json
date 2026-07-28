@@ -10,7 +10,7 @@
   ],
   "license": "ISC",
   "author": "ujjwal singh",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
