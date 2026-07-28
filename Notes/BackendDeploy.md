@@ -51,3 +51,11 @@ About to write to C:\Users\ujjwal kumar\Desktop\BackendDeploy\package.json:
 Is this OK? (yes) yes
 PS C:\Users\ujjwal kumar\Desktop\BackendDeploy> 
 ```
+
+---
+## now we make our custom made script where we write the start in the cript and there value is node index.js 
+## jisse bass jab ham `npm run start` chalenge toh hamra direct index.js chal jayega
+
+![
+    
+](image.png)
