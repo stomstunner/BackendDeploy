@@ -56,6 +56,26 @@ PS C:\Users\ujjwal kumar\Desktop\BackendDeploy>
 ## now we make our custom made script where we write the start in the cript and there value is node index.js 
 ## jisse bass jab ham `npm run start` chalenge toh hamra direct index.js chal jayega
 
-![
-    
-](image.png)
+![alt text](image.png)
+
+---
+
+## now we install the express for backend 
+`npm install express`
+
+
+---
+## we copy the code from the express then copy and paste in the index file
+```js
+const express = require('express');
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+```
