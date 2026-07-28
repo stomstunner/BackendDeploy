@@ -19,6 +19,11 @@ app.get('/twitter', (req, res)=> {
     res.send("Hello Twitter")
 })
 
+// lets make a another route for login where we display a h1 tag with the text 'Login Page'
+
+app.get('/login',(request, response)=>{
+    response.send("<h1 style = background:red;>Login Page</h1>")
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
