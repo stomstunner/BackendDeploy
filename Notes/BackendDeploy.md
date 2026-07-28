@@ -72,10 +72,17 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send("Mainne ek server bana diya hai with the help of express js")
 })
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 ```
+
+----
+## after writing the code of express get and liten we sucessfully make the server because it run continousely and does not end ,, it listen continousely and when we also go to another route we get the response fron server
+
+---
+
+## also we have to change the type : module to commanjs because module me import kaam karta hai aur commanjs me ham ek object me express ko store kar rahe hai 
