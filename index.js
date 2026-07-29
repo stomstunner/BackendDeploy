@@ -62,11 +62,10 @@ app.get('/', (req, res) => {
 
     <body>
       <div class="card">
-        <h1>🚀 Express Server is Live</h1>
-        <p>Congratulations! Your backend is deployed successfully.</p>
+        
 
         <p class="warning">
-          ⚠️ Bhai, koi bhi unknown link par click mat karna.
+          ⚠️ BSDK, koi bhi unknown link par click mat karna.
         </p>
       </div>
     </body>
