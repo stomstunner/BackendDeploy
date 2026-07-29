@@ -1,10 +1,12 @@
+require("dotenv").config()
+
 const express = require('express');
 // here we just import the express module from the dependencies we installed in the previous step. This module is used to create a web server and handle HTTP requests and responses.
 
 
 const app = express()
 // and here the app varibale is initilized with the express function 
-const port = 3000
+const port = process.env.PORT || 8000
 // in computer we have nearly 65535 ports avaliable for use  and we can use any of them to run our web server. Here we are using port 3000 for our web server. we can use the 5000 port also 
 
 
