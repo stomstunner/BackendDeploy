@@ -11,9 +11,69 @@ const port = process.env.PORT || 8000
 
 
 
+// app.get('/', (req, res) => {
+//   res.send(`Bhai Koi bhi link pe click nahi karna chaiye `)
+// })
+
 app.get('/', (req, res) => {
-  res.send(`Kya haal hai bhai mainne ek server bana liya hai`)
-})
+  res.send(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>BackendDeploy</title>
+      <style>
+        body{
+          margin:0;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          height:100vh;
+          background:linear-gradient(135deg,#1e3c72,#2a5298);
+          font-family:Arial,sans-serif;
+          color:white;
+        }
+
+        .card{
+          background:rgba(255,255,255,0.12);
+          padding:40px;
+          border-radius:20px;
+          text-align:center;
+          backdrop-filter:blur(10px);
+          box-shadow:0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1{
+          margin-bottom:10px;
+          font-size:38px;
+        }
+
+        p{
+          font-size:20px;
+          color:#ddd;
+        }
+
+        .warning{
+          color:#ffcc00;
+          font-weight:bold;
+          margin-top:20px;
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="card">
+        <h1>🚀 Express Server is Live</h1>
+        <p>Congratulations! Your backend is deployed successfully.</p>
+
+        <p class="warning">
+          ⚠️ Bhai, koi bhi unknown link par click mat karna.
+        </p>
+      </div>
+    </body>
+    </html>
+  `);
+});
+
 // so we know ki hamare pass app varable me express function hai jiki help se ham get request ko handle kar sakte hai. Yaha pe hamne '/' route ke liye ek get request handle kiya hai. Jab bhi koi user hamare server ke root url pe request karega to ye function execute hoga aur 'Hello World!' message return karega.
 // jab bhi ham home pe rahenge toh ham ek callback function me ager hamraa home se kuch request jata hai toh ham uska response den karenge
 
